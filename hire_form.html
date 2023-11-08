@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Talent Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hire Talent</h1>
+        <p>Fill out the form below to provide hiring information.</p>
+    </header>
+
+    <form id="hireForm" action="/submit-hire-form" method="post">
+       
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required><br><br>
+
+        <label for="jobDescription">Job Description:</label>
+        <textarea id="jobDescription" name="jobDescription" required></textarea><br><br>
+
+        <label for="jobLocation">Job Location:</label>
+        <input type="text" id="jobLocation" name="jobLocation" required><br><br>
+
+        <label for="jobType">Job Type:</label>
+        <select id="jobType" name="jobType" required>
+            <option value="Full-Time">Full-Time</option>
+            <option value="Part-Time">Part-Time</option>
+            <option value="Contract">Contract</option>
+        </select><br><br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" required><br><br>
+
+        <label for="applicationDeadline">Application Deadline:</label>
+        <input type="date" id="applicationDeadline" name="applicationDeadline" required><br><br>
+
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required><br><br>
+
+        <label for="contactEmail">Contact Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail" required><br><br>
+
+        <input type="submit" value="Submit" class="btn">
+    </form>
+</body>
+</html>
